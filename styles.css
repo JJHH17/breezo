@@ -26,7 +26,10 @@ body {
 
 #mainContent {
     display: grid;
-    grid-template-columns: 0.15fr repeat(2, 1fr) 0.15fr;
+    grid-template-columns: 0.15fr 1.3fr 0.7fr 0.15fr;
     grid-template-rows: 40vh 40vh;
 }
 
+#weatherContainer {
+    grid-column: 2 / 3;
+}
