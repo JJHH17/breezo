@@ -11,3 +11,21 @@ export function initBtn() {
     const initialButton = document.querySelector("#initBtn");
     return initialButton;
 }
+
+// Selecting the initial search modal
+function initSearchModal() {
+    const initModal = document.querySelector("#initSearch");
+    return initModal;
+}
+
+// Hiding the initial modal
+export function hideInitModal() {
+    const modal = initSearchModal();
+    modal.style.display = "none";
+}
+
+// Displaying the initial modal
+export function displayInitModal() {
+    const modal = initSearchModal();
+    modal.style.display = "block";
+}
