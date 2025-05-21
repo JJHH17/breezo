@@ -29,3 +29,4 @@ export function displayInitModal() {
     const modal = initSearchModal();
     modal.style.display = "block";
 }
+
