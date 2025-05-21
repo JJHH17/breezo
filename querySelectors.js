@@ -30,3 +30,20 @@ export function displayInitModal() {
     modal.style.display = "block";
 }
 
+// Hides header search modal
+export function hideHeaderSearch() {
+    const headerModal = document.querySelector("#headerSearch");
+    return headerModal;
+}
+
+// Selects header input
+export function headerInput() {
+    const headerInput = document.querySelector("#headerInput");
+    return headerInput;
+}
+
+// Selects header 
+export function headerBtn() {
+    const headerBtn = document.querySelector("#headerBtn");
+    return headerBtn;
+}
