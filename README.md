@@ -8,3 +8,13 @@ This application uses a proxy server for API Key handling and security.
 - This is also presented in graph form.
 - We also present a 24 hour forecast, as well as a 7 day overview of the location.
 
+# Development Steps:
+- Ensure Node is installed:
+run ```npm init -y```
+
+- Install Node dependencies 
+run ```npm install express axios dotenv cors```
+- Express = web framework
+- Axios = makes HTTP Requests
+- dotenv = manages environment and secure variables
+- cors = allowing request from frontend
