@@ -6,7 +6,7 @@ hideHeaderSearch();
 
 // API functionality 
 function getWeather(location) {
-    // Display loading message here (optional)
+    // Display loading message here 
 
     fetch(`/api/weather?location=${encodeURIComponent(location)}`)
         .then(res => res.json())
