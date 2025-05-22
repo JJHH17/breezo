@@ -33,7 +33,7 @@ export function displayInitModal() {
 // Hides header search modal
 export function hideHeaderSearch() {
     const headerModal = document.querySelector("#headerSearch");
-    return headerModal;
+    headerModal.style.display = "none";
 }
 
 // Selects header input
