@@ -1,5 +1,6 @@
 # breezo
 A simple weather web application using the Visual Crossing API.
+This application uses a proxy server for API Key handling and security.
 
 # General info
 - This is a simple weather web application using the Visual Crossing API.
