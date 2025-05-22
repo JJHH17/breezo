@@ -1,36 +1,25 @@
 import { initBtn, hideInitModal, hideMainContent, hideHeaderSearch } from "./querySelectors.js";
 
-// Handling Visual Crossing API Credentials
-const apiKey = process.env.apiKey;
-
-console.log(apiKey);
-
 // Hides main content and header search on initial load
 hideMainContent();
 hideHeaderSearch();
 
 // API functionality 
-// function getWeather(location) {
-//     // Display loading message here 
+function getWeather(location) {
+    // Display loading message here (optional)
 
-//     // Fetching data
-//     fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=uk&include=days%2Chours&key=${apiKey}&contentType=json`, {
-//         "method": "GET",
-//         "mode": "cors",
-//     })
+    fetch(`/api/weather?location=${encodeURIComponent(location)}`)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            // TODO: Handle data and update the UI
+        })
+        .catch(error => {
+            console.error("Error fetching weather data:", error);
+        });
+}
 
-//     // Parse to JSON
-//     .then(function(response) {
-//         return response.json();
-//     })
-
-//     // Return data to front end 
-//     .then(function(response) {
-//         console.log(response);
-//     })
-// }
-
-// // Initial modal search
-// initBtn().addEventListener("click", () => {
-//     alert("Hello, World!");
-// })
+// Initial modal search
+initBtn().addEventListener("click", () => {
+    alert("Hello, World!");
+})

@@ -1,0 +1,27 @@
+{
+  "name": "breezo",
+  "version": "1.0.0",
+  "description": "A simple weather web application using the Visual Crossing API. This application uses a proxy server for API Key handling and security.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJHH17/breezo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJHH17/breezo/issues"
+  },
+  "homepage": "https://github.com/JJHH17/breezo#readme",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
