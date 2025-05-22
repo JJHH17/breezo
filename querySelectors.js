@@ -47,3 +47,9 @@ export function headerBtn() {
     const headerBtn = document.querySelector("#headerBtn");
     return headerBtn;
 }
+
+// Hides main content
+export function hideMainContent() {
+    const mainContent = document.querySelector("#mainContent");
+    mainContent.style.display = "none";
+}
