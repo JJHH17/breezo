@@ -81,6 +81,22 @@ body {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#searchTitle {
+    padding-bottom: 10px;
+    font-size: xx-large;
+}
+
+#searchDesc {
+    padding-bottom: 10px;
+}
+
+#initInput, #initBtn {
+    height: 30px;
 }
 
 #weekForecast {
