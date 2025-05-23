@@ -53,3 +53,9 @@ export function hideMainContent() {
     const mainContent = document.querySelector("#mainContent");
     mainContent.style.display = "none";
 }
+
+// Displays main content
+export function displayMainContent() {
+    const mainContent = document.querySelector("#mainContent");
+    mainContent.style.display = "grid";
+}

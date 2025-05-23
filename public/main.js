@@ -1,4 +1,4 @@
-import { initInput, initBtn, hideInitModal, hideMainContent, hideHeaderSearch, headerInput } from "./querySelectors.js";
+import { initInput, initBtn, hideInitModal, hideMainContent, hideHeaderSearch, headerInput, displayMainContent } from "./querySelectors.js";
 
 // Hides main content and header search on initial load
 hideMainContent();
@@ -10,11 +10,22 @@ function getWeather(location) {
 
     fetch(`/api/weather?location=${encodeURIComponent(location)}`)
         .then(res => res.json())
-        
+
         .then(data => {
             console.log(data);
-            // TODO: Handle data and update the UI
+
+            // Refresh UI to display front end
+            hideInitModal();
+            displayMainContent();
         })
+
+        .then(data => {
+            // Update the UI elements
+            console.log("Placeholder")
+
+            // Update UI elements with weather data
+        })
+
         .catch(error => {
             console.error("Error fetching weather data:", error);
         });
