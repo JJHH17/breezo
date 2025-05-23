@@ -1,4 +1,4 @@
-import { initBtn, hideInitModal, hideMainContent, hideHeaderSearch } from "./querySelectors.js";
+import { initInput, initBtn, hideInitModal, hideMainContent, hideHeaderSearch, headerInput } from "./querySelectors.js";
 
 // Hides main content and header search on initial load
 hideMainContent();
@@ -10,6 +10,7 @@ function getWeather(location) {
 
     fetch(`/api/weather?location=${encodeURIComponent(location)}`)
         .then(res => res.json())
+        
         .then(data => {
             console.log(data);
             // TODO: Handle data and update the UI
@@ -21,5 +22,6 @@ function getWeather(location) {
 
 // Initial modal search
 initBtn().addEventListener("click", () => {
-    alert("Hello, World!");
+    const input = initInput();
+    getWeather(input.value);
 })

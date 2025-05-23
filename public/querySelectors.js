@@ -3,7 +3,7 @@
 // Selects the initial search input
 export function initInput() {
     const initialInput = document.querySelector("#initInput");
-    return initInput;
+    return initialInput;
 }
 
 // Selects initial search button
