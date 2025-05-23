@@ -12,6 +12,10 @@ This application uses a proxy server for API Key handling and security.
 - Ensure Node is installed:
 run ```npm init -y```
 
+- Run the server locally (optional development step):
+run ```npm start```
+Head over to http:\\localhost:3000
+
 - Install Node dependencies 
 run ```npm install express axios dotenv cors```
 - Express = web framework
