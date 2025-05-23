@@ -1,6 +1,7 @@
 import { initInput, initBtn, hideInitModal, hideMainContent, hideHeaderSearch, headerInput, displayMainContent, locationDisplay,
     tempDisplay, descDisplay, feelsLikeDesc, humidityDesc, windDesc
  } from "./querySelectors.js";
+import { dayIcon } from "./iconImport.js";
 
 // Hides main content and header search on initial load
 hideMainContent();
@@ -30,6 +31,10 @@ function getWeather(location) {
             feelsLikeDesc().innerText = "Feels like: " + data.days[0].feelslike + "°C";
             humidityDesc().innerText = "Humidity: " + data.days[0].humidity + "%";
             windDesc().innerText = "Wind Speed: " + data.days[0].windspeed + "mph";
+
+            // Import icon
+            dayIcon(data.days[0].icon);
+            console.log(data.days[0].icon)
         })
 
         .catch(error => {
