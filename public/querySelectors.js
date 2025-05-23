@@ -65,3 +65,28 @@ export function locationDisplay() {
     const location = document.querySelector("#location");
     return location;
 }
+
+export function tempDisplay() {
+    const temp = document.querySelector("#dayTemp");
+    return temp
+}
+
+export function descDisplay() {
+    const desc = document.querySelector("#desc");
+    return desc;
+}
+
+export function feelsLikeDesc() {
+    const feel = document.querySelector("#feelsLike");
+    return feel;
+}
+
+export function humidityDesc() {
+    const humidity = document.querySelector("#humidity");
+    return humidity;
+}
+
+export function windDesc() {
+    const wind = document.querySelector("#wind");
+    return wind;
+}
