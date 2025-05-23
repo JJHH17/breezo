@@ -59,3 +59,9 @@ export function displayMainContent() {
     const mainContent = document.querySelector("#mainContent");
     mainContent.style.display = "grid";
 }
+
+// Selects location element
+export function locationDisplay() {
+    const location = document.querySelector("#location");
+    return location;
+}
